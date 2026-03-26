@@ -138,6 +138,44 @@
         </table>
     </section>
 
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados para contato</legend>
+
+                <div class="form-grid">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Rikelry Monteiro Souza" />
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="rikelry.m.souza@gmail.com" />
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(86) 99821-7171"
+                            pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" title="Use o formato (00) 00000-0000" />
+                    </div>
+
+                    <div>
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="elogio">Elogio</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
 </body>
 
 </html>
