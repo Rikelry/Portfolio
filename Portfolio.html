@@ -183,6 +183,28 @@
                     <label><input type="radio" name="origem" value="outro" /> Outro</label>
                 </div>
             </fieldset>
+
+            <fieldset>
+                <legend>Detalhes da mensagem</legend>
+
+                <div class="range-row">
+                    <label for="urgencia">Nível de urgência: <span id="valorUrgencia">5</span></label>
+                    <input type="range" id="urgencia" name="urgencia" min="1" max="10" value="5"
+                        oninput="valorUrgencia.textContent = this.value" />
+                </div>
+
+                <div style="margin-top: 14px;">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+
+                <div style="margin-top: 14px;">
+                    <label>
+                        <input type="checkbox" name="termos" required />
+                        Concordo em enviar meus dados para contato
+                    </label>
+                </div>
+            </fieldset>
         </form>
     </section>
 
