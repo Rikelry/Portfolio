@@ -5,6 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Rikelry Monteiro Souza</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte e base */
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            background: #0f172a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+
+        /* Layout geral */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e293b, #020617);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            margin-top: 1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+
+        /* Navegação */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #cbd5f5;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #020617;
+            border-radius: 12px;
+            border: 1px solid #1e293b;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            color: #38bdf8;
+        }
+
+        section h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #7dd3fc;
+        }
+
+        /* Imagem */
+        figure {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        figure img {
+            width: 160px;
+            border-radius: 50%;
+            border: 3px solid #38bdf8;
+        }
+
+        figcaption {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+        }
+
+        /* Vídeo e áudio */
+        video,
+        audio {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Lista de projetos */
+        dl dt {
+            font-weight: bold;
+            color: #38bdf8;
+            margin-top: 1rem;
+        }
+
+        dl dd {
+            margin-left: 1rem;
+            color: #cbd5f5;
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            padding: 0.8rem;
+            border: 1px solid #1e293b;
+            text-align: left;
+        }
+
+        th {
+            background: #1e293b;
+            color: #38bdf8;
+        }
+
+        tbody tr:hover {
+            background: #020617;
+        }
+
+        /* Formulário */
+        form {
+            margin-top: 1rem;
+        }
+
+        fieldset {
+            border: 1px solid #1e293b;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        legend {
+            color: #38bdf8;
+            padding: 0 0.5rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.6rem;
+            margin-top: 0.3rem;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        /* Botão */
+        button {
+            background: #38bdf8;
+            color: #020617;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #1e293b;
+            margin-top: 2rem;
+            color: #94a3b8;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
